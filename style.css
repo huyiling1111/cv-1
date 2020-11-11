@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  font: 14px/1.5 Arial;
+  color: #666;
+  background: white;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.layout {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+header {
+  background-color: rgb(174, 248, 230); /* 不支持线性的时候显示 */
+  background-image: linear-gradient(
+    to right,
+    rgb(126, 226, 171),
+    rgb(35, 128, 131)
+  );
+  width: 100%;
+  text-align: center;
+  padding: 60px 0 10px 0;
+  color: #fff;
+}
+
+header > h1 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+header > p {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+}
+
+aside {
+  width: 240px;
+  border-right: 1px solid #ccc;
+  position: relative;
+  padding-top: 100px;
+}
+
+aside .avatar {
+  text-align: center;
+  position: absolute;
+  top: -80px;
+  width: 100%;
+}
+
+aside .avatar img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #ccc;
+}
+
+section {
+  border-bottom: 1px solid #ccc;
+  margin: 30px 20px 0 20px;
+  padding-bottom: 20px;
+}
+
+section h2 {
+  color: rgb(0, 192, 145);
+  font-size: 16px;
+}
+
+section h3 {
+  font-size: 16px;
+  color: #333;
+}
+
+section a {
+  color: #333;
+}
+section .detailSkills .personal .item span:first-child {
+  display: inline-block;
+  width: 80px;
+}
+
+.personal .item span:last-child::before {
+  content: ":";
+  margin-right: 10px;
+}
+
+.skills .item {
+  display: flex;
+  align-items: center;
+}
+
+.skills .keyword {
+  width: 80px;
+}
+
+.skills .rule {
+  flex: 1;
+  height: 4px;
+  background: #ccc;
+}
+
+.skills .rule i {
+  display: block;
+  width: 10%;
+  height: 4px;
+  background: #000;
+}
+
+.contact .item {
+  display: flex;
+  align-items: center;
+}
+.contact svg {
+  width: 25px;
+  height: 25px;
+}
+
+.contact .item span {
+  margin-left: 10px;
+}
+
+main {
+  flex: 1;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-top: 20px;
+    padding-bottom: 90px;
+  }
+  aside {
+    width: 100%;
+
+    padding-top: 0px;
+  }
+  aside .avatar img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+.small {
+  font-size: 9px;
+  color: rgba(199, 190, 190, 0.76);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (min-width: 900px) {
+  section .detailSkills .item:nth-child(3) {
+    display: flex;
+
+    align-items: baseline;
+  }
+  section .detailSkills .item:nth-child(3) .keyword1 {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+.work {
+  height: 10px;
+}
+.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 10px;
+}
+.company-p {
+  margin-top: -10px;
+}
+
+.detail.contact1 > div {
+  margin-left: -5px;
+
+  margin-top: 10px;
+}
+.detail.contact1 div a {
+  font: 14px/1.5 Arial;
+  color: #666;
+}
